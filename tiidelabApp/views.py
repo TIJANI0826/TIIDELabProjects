@@ -20,7 +20,7 @@ class SendMessageView(APIView):
             full_message = f"Dear {first_name} {last_name},\n\n{message}"
 
             send_mail(
-                'Your Subject Here',
+                'TIIDELAB Python Class Assignment 2',
                 full_message,
                 settings.DEFAULT_FROM_EMAIL,
                 [email],
